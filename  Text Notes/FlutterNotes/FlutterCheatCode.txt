@@ -1,0 +1,8 @@
+@override void
+initState() {
+  super. initState();
+Timer(const Duration (seconds: 4), 0 i Navigator-pushReplacement (
+context,
+MaterialPageRoute(builder: (context) => AppNavbarScreen)),
+}) ;
+// Timer
