@@ -79,6 +79,15 @@ void printList(struct node **head_ref){
         printf("NULL\n");
     }
 }
+
+
+void del(struct node**head_ref ,int pos){
+    if(*head_ref==NULL){
+        printf("Linked list is empty");
+    
+    }else if()
+}
+
 int main()
 {
      struct node* head = NULL;
