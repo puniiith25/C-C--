@@ -42,10 +42,6 @@ int main(){
     struct node* head =NULL;
     append(&head ,10);
     printList(&head);
-
-
-
-
     return 0;
 
 }
