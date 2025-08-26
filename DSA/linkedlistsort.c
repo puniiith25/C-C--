@@ -26,12 +26,23 @@ void palindrome(struct nide **head_ref){
         printf("List is Empty");
         return;
     }
-    struct node* temp = *head_ref;
-    if(temp->next==NULL){
+    struct node* Org = *head_ref;
+    if(Org->next==NULL){
         printf("The List is Palindrome");
         return;
 
     }
+    struct node* secondHalf = midAndRev(Org);
+    while(Org!=NULL && secondHalf!=NULL){
+        if(Org->data != secondHalf->data){
+            printf("Data mismatch : List is not a palindrome\n");
+            return;
+        }
+        Org = Org->netx;
+        secondHalf = secondHalf->next;
+
+    }
+    printf("List is a Palindrome");
 }
 void printList(struct node* head) {
     if (head == NULL) {
