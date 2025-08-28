@@ -20,9 +20,3 @@ int main(){
     }
     return 0;
 }
-// sum and avg of 2d array element
-// sum of row 
-// sum of each column
-// maximum element in each row
-// maximum element in each column
-// transpose Matrix
